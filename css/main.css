@@ -1,0 +1,131 @@
+/*
+IntersectionalFeminism.org is an open source collaborative visual essay 
+It was created and coded by Megumi Tanaka (http://megumi.co)
+
+To contribute, visit http://github.com/meewgumi/intersectional-feminism
+*/
+
+
+/*
+TO DO
+- put this in SASS
+- fix up redundant classes (do away with BEM?)
+- use this color palette: https://color.hailpixel.com/#3B95B0,E9DABE,DBC099,133035,EBE8F7,1E3652,7486CD,C14D74
+*/
+
+body {
+    margin: 0;
+    font-family: "leitura-news";
+}
+
+.page {
+    min-height: 100vh;
+    width: 100vw;
+    display: table;
+}
+
+.page__1 {
+    background-color: #3B95B0;
+}
+
+.page__1--headline {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 5rem;
+    color: #f0f0f0;
+    font-weight: 100;
+}
+
+.page__1--emphasis {
+    color: #ffffff;
+}
+
+.intersectionality {
+    width: 100vw;
+}
+
+.intersectionality svg {
+    width: 75vw;
+    margin-top: -25vh;
+    text-align: center;
+    fill: mediumseagreen;
+    mix-blend-mode: difference;
+}
+
+.page__2, .intersectionality {
+    background-color: #E9DABE;
+}
+
+.page__2--wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 0 10rem;
+}
+
+.page__2--img {
+    float: left;
+    padding-right: 3rem;
+}
+
+.page__2--text {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.page__2--emphasis {
+    color: #962543;
+    border-bottom: 1px solid #e0acba;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.page__3 {
+    background-color: #c17287;
+    display: table;
+}
+
+.page__3--headline {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 5rem;
+    color: #f0f0f0;
+    font-weight: 100;
+}
+
+.page__3 h2 {
+    color: #1E3652;
+    font-family: "futura";
+    font-weight: 100;
+    margin-bottom: 35px;
+}
+
+.page__3--button {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.page__3 a {
+    background-color: #1E3652;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 25px;
+}
+
+@media (max-width: 600px) {
+    .page__1--headline {
+        font-size: 14px;
+    }
+    .page__2--wrapper {
+    vertical-align: top;
+    padding: 0;
+    }
+    .page__2--text {
+        font-size: 7px;
+    }
+    }
+}
